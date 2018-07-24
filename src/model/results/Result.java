@@ -1,5 +1,12 @@
 package model.results;
 
-public interface Result {
+/**
+ * Possible results of a sports game
+ * @author Tom
+ *
+ */
+public enum Result {
+	
+	HOME_WIN, AWAY_WIN, DRAW
 
 }
