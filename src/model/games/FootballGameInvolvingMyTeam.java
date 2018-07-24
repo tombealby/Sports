@@ -3,12 +3,10 @@ package model.games;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import model.results.Result;
-
 /**
  * Represents a football game created from a football score
- * which contains the number of goals for my team followed by
- * the number of goals for the opposing team. The football score
+ * which contains the number of goals for the home team followed by
+ * the number of goals for the away team. The football score
  * will also contain information specifying whether my team was
  * playing at home or away.
  *
@@ -20,10 +18,10 @@ public class FootballGameInvolvingMyTeam extends FootballGame {
 	
 	/*
 	 * INPUT_PATTERN is a regex pattern used to extract the number of goals
-	 * for my team, the number of goals for the opposing team, and whether
+	 * for the home team, the number of goals for the away team, and whether
 	 * my team was playing at home or away. The pattern is expected to be 
 	 * applied against a string with the format 
-	 * <number of goals for my team>-<number of goals for opposing team><H|A>
+	 * <number of goals for home team>-<number of goals for away team><H|A>
 	 * For example a the input string "4-1A".
 	 */
 	private final Pattern INPUT_PATTERN = Pattern.compile("^(\\d)+-(\\d)+([AH])$");
