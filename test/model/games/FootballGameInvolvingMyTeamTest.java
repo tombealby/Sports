@@ -14,6 +14,12 @@ public class FootballGameInvolvingMyTeamTest {
 	}
 
 	@Test
+	public void test_getResultWhenAwayLoss() throws Exception{
+		FootballGameInvolvingMyTeam footballGameInvolvingMyTeam = new FootballGameInvolvingMyTeam("4-1A", "DTS United");
+		Assert.assertEquals(Result.HOME_WIN, footballGameInvolvingMyTeam.getResult());
+	}
+
+	@Test
 	public void test_invalidInputString() {
 		FootballGameInvolvingMyTeam footballGameInvolvingMyTeam = null;
 		try {

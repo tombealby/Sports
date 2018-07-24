@@ -35,17 +35,14 @@ public class FootballGameInvolvingMyTeam extends FootballGame {
 		Matcher matcher = INPUT_PATTERN.matcher(inputResult);
 		if (matcher.find()) {
 
-			int forGoals = Integer.valueOf(matcher.group(1));
-			int againstGoals = Integer.valueOf(matcher.group(2));
+			int homeGoals = Integer.valueOf(matcher.group(1));
+			int awayGoals = Integer.valueOf(matcher.group(2));
 			String homeOrAway = matcher.group(3);
 
 			boolean isHomeTeam = "H".equals(homeOrAway);
 
 			String homeTeam = isHomeTeam ? this.TEAM_NAME : null;
 			String awayTeam = !isHomeTeam ? this.TEAM_NAME : null;
-
-			int homeGoals = isHomeTeam ? forGoals : againstGoals;
-			int awayGoals = !isHomeTeam ? forGoals : againstGoals;
 
 			this.setHomeTeam(homeTeam);
 			this.setAwayTeam(awayTeam);
