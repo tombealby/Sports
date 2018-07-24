@@ -18,6 +18,7 @@ Please note the following tasks that have not been done due to time pressures -
 - the comments in the code should perhaps be expanded
 
 Design Decisions
+
 The Game class hierarchy is as follows -
 
 
