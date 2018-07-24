@@ -2,7 +2,7 @@
 
 This repository contains the code for a Sports games application containing the functionality to calculate points using the results of games.
 
-File `GameHarness.java` contains code that processes a list of football game results and prints the total number of points earned from those games.
+File `GameHarness.java` contains code that processes a list of football game results and prints the total number of points earned from those games. `GameHarness.java` contains a `main` class and can be run as a Java application.
 
 The code includes 4 test classes which should be run as JUnit tests. These 4 classes all contain `Test` in their name. 
 
