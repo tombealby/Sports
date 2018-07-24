@@ -17,7 +17,7 @@ Please note the following tasks that have not been done due to time pressures -
 - the code contains very limited tests.
 - the comments in the code should perhaps be expanded
 
-Design Decisions
+##Design Decisions
 
 The Game class hierarchy is as follows -
 
