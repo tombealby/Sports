@@ -26,7 +26,7 @@ public class FootballGameInvolvingMyTeam extends FootballGame {
 	 * <number of goals for my team>-<number of goals for opposing team><H|A>
 	 * For example a the input string "4-1A".
 	 */
-	private final Pattern INPUT_PATTERN = Pattern.compile("^(\\d)+-(\\d)([AH])$");
+	private final Pattern INPUT_PATTERN = Pattern.compile("^(\\d)+-(\\d)+([AH])$");
 	private final String TEAM_NAME;
 	
 	public FootballGameInvolvingMyTeam(String inputResult, String teamName) throws Exception {
