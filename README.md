@@ -20,7 +20,7 @@ Please note the following tasks that have not been done due to time pressures -
 Design Decisions
 The Game class hierarchy is as follows -
 
-   ```
+
        Game <interface>
          ^
          |
@@ -28,6 +28,6 @@ The Game class hierarchy is as follows -
         ^
         |
     FootballGameInvolvingMyTeam <concreate class>
-    ```
+
   
 The Game interface contains methods relating to teams. However in real life it is possible to have games between individuals and not teams. The Football class contains methods relating to goals. However in real life other games can also have goals. For example there are goals in hockey. We could have created a class or interface called GamesWithGoals and have FootballGame implement GamesWithGoals. This change would add complications and might be considered premature optimization.
