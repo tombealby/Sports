@@ -3,7 +3,7 @@ package model.points;
 import org.junit.Assert;
 import org.junit.Test;
 
-import games.FootballGameInvolvingMyTeam;
+import model.games.FootballGameInvolvingMyTeam;
 
 public class PointsCalculatorFootballMyTeamTest {
 

@@ -1,4 +1,4 @@
-package games;
+package model.games;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

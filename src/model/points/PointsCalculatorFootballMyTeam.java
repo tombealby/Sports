@@ -1,6 +1,6 @@
 package model.points;
 
-import games.FootballGameInvolvingMyTeam;
+import model.games.FootballGameInvolvingMyTeam;
 import model.results.Result;
 
 /**
