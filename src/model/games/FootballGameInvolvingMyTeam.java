@@ -33,8 +33,8 @@ public class FootballGameInvolvingMyTeam extends FootballGame {
 		Matcher matcher = INPUT_PATTERN.matcher(inputResult);
 		if (matcher.find()) {
 
-			int homeGoals = Integer.valueOf(matcher.group(1));
-			int awayGoals = Integer.valueOf(matcher.group(2));
+			int homeGoals = Integer.parseInt(matcher.group(1));
+			int awayGoals = Integer.parseInt(matcher.group(2));
 			String homeOrAway = matcher.group(3);
 
 			boolean isHomeTeam = "H".equals(homeOrAway);
